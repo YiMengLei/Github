@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+    int n, t[100000],k,m,i,j;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+        scanf("%d",&t[i]);
+    scanf("%d",&k);
+    for(i=0;i<k;i++)
+    {
+        scanf("%d",&m);
+        if(m>t[n-1])
+            printf("-1\n");
+        else
+        {
+        for(j=0;t[j]<m;j++);
+        printf("%d\n",t[j]);
+        }
+    }
+}
